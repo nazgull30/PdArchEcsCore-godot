@@ -47,28 +47,14 @@ public class WorldWrapper(World world) : IWorld
         return res;
     }
 
-    public void Query(in QueryDescription queryDescription, ForEach forEntity)
-    {
-        world.Query(in queryDescription, forEntity);
-    }
+    public void Query(in QueryDescription queryDescription, ForEach forEntity) => world.Query(in queryDescription, forEntity);
+    public void Query<T0>(in QueryDescription description, ForEach<T0> forEach) => world.Query(in description, forEach);
+    public void Query<T0, T1>(in QueryDescription description, ForEach<T0, T1> forEach) => world.Query(in description, forEach);
+    public void Query<T0, T1, T2>(in QueryDescription description, ForEach<T0, T1, T2> forEach) => world.Query(in description, forEach);
+    public void Query<T0, T1, T2, T3>(in QueryDescription description, ForEach<T0, T1, T2, T3> forEach) => world.Query(in description, forEach);
 
-    public void Query<T0>(in QueryDescription description, ForEach<T0> forEach)
-    {
-        world.Query(in description, forEach);
-    }
-
-    public void Query<T0, T1>(in QueryDescription description, ForEach<T0, T1> forEach)
-    {
-        world.Query(in description, forEach);
-    }
-
-    public void Query<T0, T1, T2>(in QueryDescription description, ForEach<T0, T1, T2> forEach)
-    {
-        world.Query(in description, forEach);
-    }
-
-    public void Query<T0, T1, T2, T3>(in QueryDescription description, ForEach<T0, T1, T2, T3> forEach)
-    {
-        world.Query(in description, forEach);
-    }
+    public void Query<T0>(in QueryDescription description, ForEachWithEntity<T0> forEach) => world.Query(in description, forEach);
+    public void Query<T0, T1>(in QueryDescription description, ForEachWithEntity<T0, T1> forEach) => world.Query(in description, forEach);
+    public void Query<T0, T1, T2>(in QueryDescription description, ForEachWithEntity<T0, T1, T2> forEach) => world.Query(in description, forEach);
+    public void Query<T0, T1, T2, T3>(in QueryDescription description, ForEachWithEntity<T0, T1, T2, T3> forEach) => world.Query(in description, forEach);
 }

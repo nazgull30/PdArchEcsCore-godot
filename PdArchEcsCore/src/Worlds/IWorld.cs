@@ -18,4 +18,9 @@ public interface IWorld
     public void Query<T0, T1>(in QueryDescription description, ForEach<T0, T1> forEach);
     public void Query<T0, T1, T2>(in QueryDescription description, ForEach<T0, T1, T2> forEach);
     public void Query<T0, T1, T2, T3>(in QueryDescription description, ForEach<T0, T1, T2, T3> forEach);
+
+    public void Query<T0>(in QueryDescription description, ForEachWithEntity<T0> forEach);
+    public void Query<T0, T1>(in QueryDescription description, ForEachWithEntity<T0, T1> forEach);
+    public void Query<T0, T1, T2>(in QueryDescription description, ForEachWithEntity<T0, T1, T2> forEach);
+    public void Query<T0, T1, T2, T3>(in QueryDescription description, ForEachWithEntity<T0, T1, T2, T3> forEach);
 }
