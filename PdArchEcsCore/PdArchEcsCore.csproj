@@ -12,7 +12,7 @@
     <OutputPath>./nupkg</OutputPath>
 
     <Title>PdArchEcsCore</Title>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Description>PdArchEcsCore description.</Description>
     <Copyright>© 2024 nazgul30</Copyright>
     <Authors>nazgul30</Authors>

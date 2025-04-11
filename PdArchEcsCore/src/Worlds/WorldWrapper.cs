@@ -7,6 +7,8 @@ using PdArchEcsCore.Exceptions;
 
 public class WorldWrapper(World world) : IWorld
 {
+    public int Id => world.Id;
+
     public Entity Create()
     {
         return world.Create();

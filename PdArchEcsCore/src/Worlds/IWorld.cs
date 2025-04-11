@@ -5,6 +5,8 @@ using Arch.Core;
 
 public interface IWorld
 {
+    public int Id { get; }
+
     public Entity Create();
 
     public void Destroy(Entity entity);
