@@ -6,4 +6,5 @@ public interface ILinkable
 {
     public void Link(Entity entity, ILinkedEntityRepository linkedEntityRepository);
     public void Link(Entity entity);
+    public void Unlink();
 }
